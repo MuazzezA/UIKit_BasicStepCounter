@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step" translatesAutoresizingMaskIntoConstraints="NO" id="bva-BT-3FM">
+                                <rect key="frame" x="106.66666666666669" y="350.66666666666669" width="180" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="YvO-Av-LoN"/>
+                                    <constraint firstAttribute="height" constant="151" id="q1D-pq-aCf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAH-2o-zw0">
+                                <rect key="frame" x="143" y="292.66666666666669" width="107" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="EHv-J4-G6x"/>
+                                    <constraint firstAttribute="width" constant="107" id="YCb-2Y-n16"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <color key="textColor" name="cold"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="dark"/>
+                        <constraints>
+                            <constraint firstItem="bva-BT-3FM" firstAttribute="top" secondItem="VAH-2o-zw0" secondAttribute="bottom" constant="25" id="6lA-wU-pco"/>
+                            <constraint firstItem="bva-BT-3FM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dnt-qj-jN7"/>
+                            <constraint firstItem="bva-BT-3FM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="K14-wn-3T0"/>
+                            <constraint firstItem="VAH-2o-zw0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pOR-Y6-UkM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="step" width="170.66667175292969" height="170.66667175292969"/>
+        <namedColor name="cold">
+            <color red="0.94117647058823528" green="0.92549019607843142" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="dark">
+            <color red="0.19215686274509802" green="0.18823529411764706" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
