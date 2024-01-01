@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,73 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StepCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step" translatesAutoresizingMaskIntoConstraints="NO" id="g24-MF-y2F" userLabel="stepImage">
+                                <rect key="frame" x="-36" y="-9" width="190" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="OlA-h7-EZK"/>
+                                    <constraint firstAttribute="height" constant="172" id="hq3-o6-nfT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC STEP COUNTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcc-9r-Rcr" userLabel="appName">
+                                <rect key="frame" x="26.999999999999986" y="105" width="248.66666666666663" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="eqQ-Tf-7Ru"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="22"/>
+                                <color key="textColor" name="cold"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meeting a certain daily step goal is an important step towards supporting your health and enhancing your overall well-being" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-mM-CSy" userLabel="infoText">
+                                <rect key="frame" x="27.666666666666657" y="52" width="338" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9NR-lW-z0L"/>
+                                    <constraint firstAttribute="width" constant="338" id="gLw-d3-tOW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" name="silver"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.898" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vI5-A7-LBT" userLabel="stepCount">
+                                <rect key="frame" x="132" y="400.33333333333331" width="129.33333333333337" height="51.666666666666686"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="42"/>
+                                <color key="textColor" name="cold"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="dark"/>
+                        <constraints>
+                            <constraint firstItem="g24-MF-y2F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-9" id="3Ym-k0-5Ni"/>
+                            <constraint firstItem="kcc-9r-Rcr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="BJw-bb-dnY"/>
+                            <constraint firstItem="vI5-A7-LBT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HGP-Om-mK5"/>
+                            <constraint firstItem="PiP-mM-CSy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="52" id="IqV-fc-jy1"/>
+                            <constraint firstItem="g24-MF-y2F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-36" id="LOg-Lm-DfM"/>
+                            <constraint firstItem="kcc-9r-Rcr" firstAttribute="top" secondItem="PiP-mM-CSy" secondAttribute="bottom" constant="3" id="ZnG-Jq-EyD"/>
+                            <constraint firstItem="vI5-A7-LBT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pMb-7k-7OS"/>
+                            <constraint firstItem="PiP-mM-CSy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tYq-cn-NG6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-54.198473282442748" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="step" width="170.66667175292969" height="170.66667175292969"/>
+        <namedColor name="cold">
+            <color red="0.94117647058823528" green="0.92549019607843142" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="dark">
+            <color red="0.19215686274509802" green="0.18823529411764706" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="silver">
+            <color red="0.71372549019607845" green="0.73333333333333328" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

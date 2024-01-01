@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import CoreMotion
 
 class ViewController: UIViewController {
 
+    let activityManager = CMMotionActivityManager()
+    let pedometer = CMPedometer()
+    var stepsCount: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        startCounting()
+        
     }
 
+    func startCounting(){
+        
+        
+    }
 
 }
 
